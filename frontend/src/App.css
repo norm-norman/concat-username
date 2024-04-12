@@ -14,3 +14,36 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
+
+.Form-Group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Form-Item {
+  width: 60%;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 8px;
+  min-height: 24px;
+  &.invalid {
+    border: rgb(167, 3, 3) solid 2px;
+    background-color: rgb(238, 208, 208);
+  }
+}
+
+.Form-Submit-Button {
+  background-color: #0a1128;
+  color: rgb(156, 174, 175);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: calc(5px + 1vmin);
+  border: 0px;
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(156, 174, 175);
+    color: #0a1128;
+  }
+}

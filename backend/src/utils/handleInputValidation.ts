@@ -14,19 +14,23 @@ export function handleInputValidation(data: FormData): ResultShape {
   let valid = true;
 
   // first name error
-  if (firstName === null || firstName === undefined) {
+  if (firstName === null || firstName === undefined || firstName === '') {
     valid = false;
     errors.push('firstName');
   }
 
   // last name error
-  if (lastName === null || lastName === undefined) {
+  if (lastName === null || lastName === undefined || lastName === '') {
     valid = false;
     errors.push('lastName');
   }
 
   // favorite fruit error
-  if (favoriteFruit === null || favoriteFruit === undefined) {
+  if (
+    favoriteFruit === null ||
+    favoriteFruit === undefined ||
+    favoriteFruit === ''
+  ) {
     valid = false;
     errors.push('favoriteFruit');
   }
@@ -34,7 +38,7 @@ export function handleInputValidation(data: FormData): ResultShape {
   // birthyear error
   if (birthyear === null || birthyear === undefined || birthyear <= 0) {
     valid = false;
-    errors.push('birthday');
+    errors.push('birthyear');
   }
 
   return { valid, errors };

@@ -24,3 +24,17 @@ Contains simple React app with Node.js backend to generate unique usernames from
 8. navigate to http://localhost:3000
 
 ### Screenshots
+
+```Welcome Screen - On Load```
+
+![welcome-screen](https://github.com/norm-norman/concat-username/assets/34076664/e3503271-b5de-4b86-a2bc-9566dc1e322a)
+
+```After Successful Submission```
+
+![successful-submission](https://github.com/norm-norman/concat-username/assets/34076664/27ddb1dd-4585-4a59-b7f5-46094814edcd)
+
+```With One Error in Submission```
+![one-error](https://github.com/norm-norman/concat-username/assets/34076664/b7c3ce84-0425-4bf7-a667-7c9547bad55d)
+
+```With Multiple Errors in Submission```
+![multiple-errors](https://github.com/norm-norman/concat-username/assets/34076664/90e41b78-84ca-4860-86fd-75ecc91aaca1)
